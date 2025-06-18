@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: gradientFade 2s ease-in;
+}
+
+@keyframes gradientFade {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.container {
+    background: linear-gradient(135deg, #a05feb, #6d09e7);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(217, 111, 238, 0.7);
+    text-align: center;
+    animation: popUp 0.8s ease-out;
+}
+
+@keyframes popUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #0a33e9;
+}
+
+input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6e8efb;
+    box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background: linear-gradient(to right, #6e8efb, #a777e3);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.4s ease, transform 0.2s;
+}
+
+button:hover {
+    box-shadow: 0 12px 30px rgba(217, 111, 238, 0.7);
+    transform: scale(1.05);
+    background: linear-gradient(to right, #a777e3, #6e8efb);
+}
+
+#qrCode {
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+    color: #6e8efb;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #360474;
+}
