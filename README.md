@@ -1,5 +1,8 @@
 # QR Code Generator
 https://laharik09.github.io/QR-generator/
+
+
+
 A simple and intuitive web-based QR Code Generator that allows users to convert text or URLs into scannable QR codes. This tool is designed for ease of use, providing a quick way to generate QR codes for various purposes.
 
 ## Features
